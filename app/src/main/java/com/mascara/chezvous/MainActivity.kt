@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         web_view.getSettings().setUseWideViewPort(true)
         web_view.getSettings().setLoadWithOverviewMode(true)
         web_view.settings.domStorageEnabled = true
+        web_view.settings.allowFileAccess = true
+        web_view.settings.allowFileAccessFromFileURLs = true
         
 
         web_view.loadUrl(url)
